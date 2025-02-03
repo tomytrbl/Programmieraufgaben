@@ -84,20 +84,4 @@ public class Place {
     }
 
     public static void main (String[] args){
-        String currentDir = System.getProperty("user.dir");
-        System.out.println(currentDir);
-
-        String content = "Running the Code\n" +
-                "If you run this program from an IDE, it will print the working directory of the IDE's runtime configuration (usually the project folder).\n" +
-                "If you run it from the command line, it will show the directory where the java command was executed.";
-
-        try {
-//            Files.createDirectories(Path.of(currentDir).resolve("Hello.txt"));
-//            Files.createFile(Path.of(currentDir).resolve("Hello.txt").resolve("Hello.txt"));
-            FileWriter w = new FileWriter();
-            w.write("Hi");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 }
